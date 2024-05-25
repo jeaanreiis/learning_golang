@@ -1,21 +1,22 @@
+// projetos simples para treinar golang //
+
+// criar um programa para calcular notas de alunos (conceito estrutura de controle e decisao)
+
+// criar programa "breaking bad" que devolve informacoes tabela periodica de acordo com letra ou nome do elemento inseriodo no prompt (conceitos de mapas)
+
+// criar calculadora (conceito de funcoes)
+
 package main
 
 import "fmt"
 
 func main() {
-	var x [5]float64
-	x[0] = 98
-	x[1] = 93
-	x[2] = 77
-	x[3] = 82
-	x[4] = 83
+	fmt.Printf("Olá, Mundo!")
 
-	var total float64 = 0
+	m := make(map[string]string)
 
-	for i := 0; i < len(x); i++ {
-		total += x[i]
-	}
+	m["info"] = "Meu texto"
 
-	fmt.Println(total / float64(len(x)))
+	fmt.Println(m["info"])
 
 }
